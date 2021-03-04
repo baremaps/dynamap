@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <!-- map -->
+  <div id="map"></div>
+
+  <!-- color -->
+  <div id="style" class="map-overlay">
+    <div class="map-overlay-inner">
+      <fieldset>
+        <label>Select layer</label>
+        <input type="text" id="layer" name="layer" value="building">
+      </fieldset>
+      <fieldset>
+        <label>Choose color</label>
+        <div id="swatches"></div>
+      </fieldset>
+      <fieldset>
+        <label>Change opacity</label>
+        <input type="range" min="0" max="100" value="100" id="opacity">
+      </fieldset>
+    </div>
+  </div>
+
+  <!-- features -->
+  <div id="info" class="map-overlay">
+    <div class="map-overlay-inner">
+      <pre id="feature"></pre>
+    </div>
+  </div>
+</body>
+
+</html>
